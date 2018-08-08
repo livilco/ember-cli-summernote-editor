@@ -15,23 +15,13 @@ module.exports = {
             return fastbootTransform(input);
           }
         },
-        bootstrap: {
-          import: [
-            'dist/js/bootstrap.js',
-            'dist/css/bootstrap.css'
-          ],
-          vendor: ['dist/js/bootstrap.js.map'],
-          processTree(input) {
-            return fastbootTransform(input);
-          }
-        },
         summernote: {
           srcDir: 'dist',
           destDir: 'assets',
           import: [
-            'summernote-bs4.css',
-            'summernote-bs4.js',
-            'summernote-bs4.js.map',
+            'summernote.css',
+            'summernote.js',
+            'summernote.js.map',
             'font/summernote.eot',
             'font/summernote.ttf',
             'font/summernote.woff'
