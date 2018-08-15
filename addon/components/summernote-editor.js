@@ -35,6 +35,7 @@ export default Component.extend({
   placeholder: null,
   dialogsInBody: false,
   disableDragAndDrop: false,
+  disableLinkTarget: false,
 
   summernoteOptions() {
     let buttons = {};
@@ -45,7 +46,7 @@ export default Component.extend({
 
     let properties = this.getProperties([
       'height', 'focus', 'lang', 'airMode', 'shortcuts', 'placeholder',
-      'dialogsInBody', 'dialogsFade', 'disableDragAndDrop'
+      'dialogsInBody', 'dialogsFade', 'disableDragAndDrop', 'disableLinkTarget'
     ]);
 
     _buttons.forEach((item, i) => {
